@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExpenseInk — Account &amp; Data Deletion</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --primary: #7c3aed;
+      --text: #1e293b;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header {
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      color: #fff;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 820px;
+      margin: -24px auto 48px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin: 28px 0 10px;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul, ol {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    .steps {
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 12px 0;
+    }
+
+    .steps ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f5f3ff;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 0 16px 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ExpenseInk — Account &amp; Data Deletion</h1>
+    <p>Last updated: June 15, 2026</p>
+    <p>Developer: Raghov Apps</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <p>
+        This page explains how to delete your <strong>ExpenseInk</strong> account and associated
+        data. ExpenseInk stores your account and transactions <strong>locally on your device</strong>.
+        Raghov Apps does <strong>not</strong> operate cloud servers that store your personal or
+        financial data.
+      </p>
+
+      <h2>1. Delete your entire account and all app data</h2>
+      <p>Follow these steps to permanently remove your ExpenseInk account from your device:</p>
+
+      <div class="steps">
+        <ol>
+          <li>Open <strong>ExpenseInk</strong> on your Android device.</li>
+          <li>Go to <strong>Profile</strong> (bottom navigation).</li>
+          <li>Tap <strong>Log out</strong> and confirm.</li>
+          <li>Open your device <strong>Settings</strong> → <strong>Apps</strong> → <strong>ExpenseInk</strong>.</li>
+          <li>Tap <strong>Storage</strong> → <strong>Clear data</strong> (or <strong>Clear storage</strong>).</li>
+          <li>Alternatively, tap <strong>Uninstall</strong> to remove the app and all local data.</li>
+        </ol>
+      </div>
+
+      <p class="muted">
+        After clearing app data or uninstalling, your name, email, password hash, transactions,
+        and preferences are permanently removed from that device.
+      </p>
+
+      <h2>2. Delete data you backed up or exported</h2>
+      <p>Clearing the app does not remove copies you saved elsewhere. Delete these manually if needed:</p>
+
+      <h3>Google Drive backup (optional)</h3>
+      <p>If you used Google Sign-In to back up your data:</p>
+      <div class="steps">
+        <ol>
+          <li>Open <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer">Google Drive</a>.</li>
+          <li>Find and delete the backup file: <strong>expense_ink.db</strong>.</li>
+        </ol>
+      </div>
+
+      <h3>Exported Excel files (optional)</h3>
+      <p>If you used <strong>Export transactions</strong> in Profile:</p>
+      <div class="steps">
+        <ol>
+          <li>Open your device <strong>Downloads</strong> folder (or Files app).</li>
+          <li>Delete any <strong>ExpenseInk_Transactions_*.xlsx</strong> files you no longer want.</li>
+        </ol>
+      </div>
+
+      <h2>3. Delete some data without removing your account</h2>
+      <p>You can delete individual records without deleting your whole account:</p>
+      <ul>
+        <li>Open <strong>Transactions</strong>, tap a transaction, and choose <strong>Delete</strong>.</li>
+        <li>Update or remove entries from <strong>Profile</strong> settings (language, currency, reminders) at any time.</li>
+      </ul>
+
+      <h2>4. What data is deleted vs. retained</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Deleted when you clear app data / uninstall</th>
+            <th>Retained by Raghov Apps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name, email, password (hash)</td>
+            <td>Yes — removed from your device</td>
+            <td>No — not stored on our servers</td>
+          </tr>
+          <tr>
+            <td>Transactions (amounts, categories, dates, descriptions)</td>
+            <td>Yes — removed from your device</td>
+            <td>No — not stored on our servers</td>
+          </tr>
+          <tr>
+            <td>Language, currency, reminder preferences</td>
+            <td>Yes — removed from your device</td>
+            <td>No — not stored on our servers</td>
+          </tr>
+          <tr>
+            <td>Google Drive backup file</td>
+            <td>Only if you delete it in Google Drive</td>
+            <td>Stored in your Google account (Google’s policies apply)</td>
+          </tr>
+          <tr>
+            <td>Exported Excel files</td>
+            <td>Only if you delete them from Downloads</td>
+            <td>Not stored by Raghov Apps</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="muted">
+        <strong>Retention period:</strong> Local app data remains on your device until you clear
+        app data, uninstall the app, or delete backups/exports yourself. Raghov Apps does not
+        retain copies on company servers.
+      </p>
+
+      <h2>5. Request help with deletion</h2>
+      <p>
+        If you need assistance deleting your data or have questions, contact us:
+      </p>
+      <p>
+        <strong>Raghov Apps</strong><br>
+        App: ExpenseInk<br>
+        Email: <a href="mailto:ranganathanshanmugam2@gmail.com">ranganathanshanmugam2@gmail.com</a><br>
+        Package name: com.raghovapps.expense_ink_flutter
+      </p>
+      <p class="muted">
+        Include your registered email address and a brief description of your request. We will
+        respond with step-by-step guidance. Because data is stored on your device, most deletion
+        actions must be performed on your phone as described above.
+      </p>
+
+      <h2>6. Related policies</h2>
+      <p>
+        See our
+        <a href="privacy-policy.html">Privacy Policy</a>
+        for full details on how ExpenseInk handles your information.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2026 Raghov Apps. All rights reserved.
+  </footer>
+</body>
+</html>
