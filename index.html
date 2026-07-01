@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ExpenseInk — Track Every Rupee, Effortlessly</title>
+<meta name="description" content="ExpenseInk is a beautifully simple expense & income tracker with multi-currency support, 20+ languages, Excel export, Google Drive backup and smart daily reminders." />
+<link rel="icon" type="image/png" href="images/app-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============================= NAVBAR ============================= -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <img src="images/app-icon.png" alt="ExpenseInk app icon" />
+      </span>
+      ExpenseInk
+    </a>
+
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="#developer">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#developer" class="btn btn-ghost">Contact Us</a>
+      <a href="#download" class="btn btn-primary">Get the App</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="#developer">Contact</a>
+    <a href="#download" class="btn btn-primary btn-block">Get the App</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">💜 Personal Finance, Simplified</span>
+        <h1>Track every rupee.<br /><span>Save more</span>, stress less.</h1>
+        <p>ExpenseInk is a fast, beautiful expense &amp; income tracker that helps you understand where your money goes — with smart categories, visual reports, and automatic backups, all in one clean app.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zM16.81 15.12l-2.9-2.9 2.9-2.9 3.6 2.08c.63.36.63 1.28 0 1.64l-3.6 2.08zM5.44 2.65 15.19 8.3l-2.55 2.55L5.44 2.65zM5.44 21.35l7.2-7.2 2.55 2.55-9.75 6.65z"/></svg>
+            Get it on Google Play
+          </a>
+          <a href="#features" class="btn btn-ghost">Explore Features</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="20" data-suffix="+">0</strong><span>Languages Supported</span></div>
+          <div><strong data-count="100" data-suffix="+">0</strong><span>Smart Categories</span></div>
+          <div><strong data-count="100" data-suffix="%">0</strong><span>Offline-First</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-topbar">
+              <div class="greet">Good evening 👋</div>
+              <div class="name">Hi, Ranjith</div>
+            </div>
+
+            <div class="balance-card">
+              <div class="label">Total Balance</div>
+              <div class="amount">₹ 42,530.00</div>
+              <div class="balance-row">
+                <div class="balance-pill income">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                  Income ₹68,000
+                </div>
+                <div class="balance-pill expense">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                  Expense ₹25,470
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-section-title"><span>Recent Transactions</span><span>See all</span></div>
+            <div class="tx-list">
+              <div class="tx-item">
+                <div class="tx-icon" style="background:#ffedd5;color:#ea580c;">🛍️</div>
+                <div class="tx-info">
+                  <div class="tx-title">Shopping</div>
+                  <div class="tx-sub">Today, 4:30 PM</div>
+                </div>
+                <div class="tx-amount expense">-₹1,250</div>
+              </div>
+              <div class="tx-item">
+                <div class="tx-icon" style="background:#fee2e2;color:#ea580c;">🍽️</div>
+                <div class="tx-info">
+                  <div class="tx-title">Food &amp; Dining</div>
+                  <div class="tx-sub">Today, 1:05 PM</div>
+                </div>
+                <div class="tx-amount expense">-₹480</div>
+              </div>
+              <div class="tx-item">
+                <div class="tx-icon" style="background:#dcfce7;color:#16a34a;">💰</div>
+                <div class="tx-info">
+                  <div class="tx-title">Salary</div>
+                  <div class="tx-sub">Yesterday</div>
+                </div>
+                <div class="tx-amount income">+₹68,000</div>
+              </div>
+              <div class="tx-item">
+                <div class="tx-icon" style="background:#dbeafe;color:#3b82f6;">🚗</div>
+                <div class="tx-info">
+                  <div class="tx-title">Transport</div>
+                  <div class="tx-sub">2 days ago</div>
+                </div>
+                <div class="tx-amount expense">-₹320</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="badge-float top-right">
+          <div class="badge-icon" style="background:#dcfce7;color:#16a34a;">📊</div>
+          Reports Ready
+        </div>
+        <div class="badge-float bottom-left">
+          <div class="badge-icon" style="background:#ede9fe;color:#7c3aed;">☁️</div>
+          Backed Up
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= TRUST STRIP ============================= -->
+  <div class="trust-strip">
+    <div class="container">
+      <span>🔒 Bank-grade local encryption for sign-in</span>
+      <span>☁️ Google Drive backup &amp; restore</span>
+      <span>🌐 20+ languages incl. RTL support</span>
+      <span>📶 Works fully offline</span>
+    </div>
+  </div>
+
+  <!-- ============================= FEATURES ============================= -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Current Features</span>
+        <h2>Everything you need to manage your money</h2>
+        <p>ExpenseInk packs powerful money-management tools into a clean, distraction-free interface — built for everyday use.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <h3>Smart Expense &amp; Income Tracking</h3>
+          <p>Log expenses and income in seconds with rich categories, notes, and dates — everything stays organized automatically.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+          </div>
+          <h3>Visual Reports &amp; Statistics</h3>
+          <p>Understand your spending with monthly, yearly and custom-range breakdowns, category insights and savings trends.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
+          </div>
+          <h3>Multi-Currency Support</h3>
+          <p>Track your money in the currency that matters to you, with accurate formatting wherever you spend.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+          </div>
+          <h3>20+ Languages, incl. RTL</h3>
+          <p>Use ExpenseInk in English, Hindi, Tamil, Chinese, Arabic, Spanish and 15 more languages — including right-to-left layouts.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Secure Google Sign-In</h3>
+          <p>Sign in safely with your Google account or a local password — your credentials never leave your control.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.3-1.5A4.5 4.5 0 0 0 6.5 19h11Z"/><path d="M12 12v6M9 15l3-3 3 3"/></svg>
+          </div>
+          <h3>Automatic Google Drive Backup</h3>
+          <p>Back up and restore your entire transaction history to your own Google Drive with a single tap — your data, your cloud.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M12 18v-6M9.5 14.5 12 12l2.5 2.5"/></svg>
+          </div>
+          <h3>One-Tap Excel Export</h3>
+          <p>Generate polished, professional Excel reports of your transactions to share, print, or archive whenever you need.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </div>
+          <h3>Smart Daily Reminders</h3>
+          <p>A friendly daily nudge helps you build the habit of logging every expense so nothing slips through the cracks.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-4 8-8 8-13V5l-8-3-8 3v4c0 5 2 9 8 13Z"/></svg>
+          </div>
+          <h3>100% Offline-First</h3>
+          <p>Your data lives securely on your device using a local database, so ExpenseInk works flawlessly even without internet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= HOW IT WORKS ============================= -->
+  <section id="how-it-works" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Simple by Design</span>
+        <h2>Get started in three easy steps</h2>
+        <p>No clutter, no confusing setup — just open the app and start tracking.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Create your account</h3>
+          <p>Sign up in seconds using your Google account or a simple email &amp; password.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>Add your transactions</h3>
+          <p>Log expenses and income with a category, amount and note — all in one smooth tap.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>Track, backup &amp; grow</h3>
+          <p>Review insightful reports, export to Excel, and back up to Google Drive with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= STATS BAND ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-band reveal">
+        <div>
+          <strong data-count="20" data-suffix="+">0</strong>
+          <span>Languages</span>
+        </div>
+        <div>
+          <strong data-count="100" data-suffix="+">0</strong>
+          <span>Smart Categories</span>
+        </div>
+        <div>
+          <strong data-count="1" data-suffix="-Tap">0</strong>
+          <span>Excel Export</span>
+        </div>
+        <div>
+          <strong data-count="100" data-suffix="%">0</strong>
+          <span>Private &amp; Offline-Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CTA / DOWNLOAD ============================= -->
+  <section id="download" class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Start mastering your money today</h2>
+        <p>Join ExpenseInk and turn everyday spending into clear, confident financial decisions.</p>
+        <div class="cta-actions">
+          <a href="#developer" class="btn btn-primary">Request Early Access</a>
+          <a href="privacy.html" class="btn btn-ghost">Read Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= DEVELOPER ============================= -->
+  <section id="developer" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Meet the Developer</span>
+        <h2>Built independently, with care</h2>
+        <p>ExpenseInk is designed and developed by a solo indie developer passionate about simple, honest personal-finance tools.</p>
+      </div>
+
+      <div class="dev-card reveal">
+        <div class="dev-avatar">R</div>
+        <div>
+          <div class="dev-name">Ranganathan</div>
+          <div class="dev-role">Founder &amp; App Developer — ExpenseInk</div>
+
+          <div class="dev-contacts">
+            <a class="dev-contact-item" href="mailto:ranganathanshanmugam2@gmail.com">
+              <span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </span>
+              <span><strong>Email</strong>ranganathanshanmugam2@gmail.com</span>
+            </a>
+
+            <a class="dev-contact-item" href="tel:+918825665881">
+              <span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span><strong>Phone</strong>+91 88256 65881</span>
+            </a>
+
+            <div class="dev-contact-item">
+              <span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span><strong>Location</strong>Coimbatore, Tamil Nadu, India</span>
+            </div>
+
+            <div class="dev-contact-item">
+              <span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </span>
+              <span><strong>Availability</strong>Mon–Sat, 10 AM – 7 PM IST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">
+            <img src="images/app-icon.png" alt="ExpenseInk app icon" />
+          </span>
+          ExpenseInk
+        </a>
+        <p>A simple, private and powerful expense &amp; income tracker to help you take control of your money.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#download">Get the App</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ranganathanshanmugam2@gmail.com">ranganathanshanmugam2@gmail.com</a></li>
+          <li><a href="tel:+918825665881">+91 88256 65881</a></li>
+          <li><a href="#developer">Coimbatore, Tamil Nadu, India</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> ExpenseInk. All rights reserved.</span>
+      <span>Made with 💜 by Ranganathan in Coimbatore, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
